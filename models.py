@@ -1,11 +1,11 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
-from models import Restaurant, Customer, Review, session
-exec(open("seeds.py").read())
-
-
 Base = declarative_base()
+
+
+
+
 
 class Restaurant(Base):
     __tablename__ = 'restaurants'
@@ -35,3 +35,5 @@ class Review(Base):
 
 
 
+if __name__ == '__main__':
+    exec(open("seeds.py").read())
