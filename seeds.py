@@ -1,6 +1,8 @@
 from database import session
 from models import Restaurant, Customer, Review
 
+# Rest of the code...
+
 restaurant1 = Restaurant(name='Restaurant A', price=3)
 restaurant2 = Restaurant(name='Restaurant B', price=4)
 
